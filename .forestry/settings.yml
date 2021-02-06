@@ -6,9 +6,9 @@ webhook_url:
 sections:
 - type: directory
   path: data
-  label: homepage
+  label: Pages
   create: none
-  match: homepage.yml
+  match: homepage*
   new_doc_ext: yml
   templates:
   - homepage
