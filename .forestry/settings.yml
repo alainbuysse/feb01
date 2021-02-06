@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: data
   label: homepage
-  create: documents
+  create: none
   match: homepage.yml
   new_doc_ext: yml
   templates:
