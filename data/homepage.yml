@@ -1,6 +1,6 @@
 ---
 hero:
-  enable: true
+  enable: false
   title: Title
   subtitle: subtitle
   image: images/features.png
