@@ -53,5 +53,3 @@ fields:
     - type: text
       name: content
       label: content
-pages:
-- homepage.md
