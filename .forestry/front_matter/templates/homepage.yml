@@ -20,6 +20,13 @@ fields:
     config:
       maxSize: 64
     label: image
+  - type: color
+    name: background_color
+    label: Background Color
+    description: The background color of the element.
+    config:
+      color_format: Hex
+      default: "#9B9B9B"
 - type: field_group
   name: feature
   label: feature
