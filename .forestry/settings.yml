@@ -7,10 +7,6 @@ sections:
 - type: document
   path: config.toml
   label: Configuration
-- type: document
-  label: Homepage
-  templates:
-    - homepage
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
