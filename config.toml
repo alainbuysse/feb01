@@ -1,39 +1,27 @@
 baseURL = "http://example.org/"
+googleAnalytics = ""
 languageCode = "en-us"
-title = "New onepage site"
 languageName = "En"
-summaryLength = "15"
-
-# post pagination
 paginate = "3"
-# google analytics
-googleAnalytics = "" # example : UA-123-45
-
-# unsafe html
+summaryLength = "15"
+title = "New onepage site"
+[hero]
+background_color = "#97D0B4"
+subtitle = "rqsdfqsdfqsf"
+title = "azerazer"
 [markup.goldmark.renderer]
 unsafe = true
-
-############################# Plugins ##############################
-#[[ An array of tables ]]
-# CSS Plugins
+[params]
+author = "Themefisher"
+contact_form_action = "#"
+description = "This is meta description"
+logo = "images/logo.png"
+logo_width = "200px"
 [[params.plugins.css]]
 link = "plugins/css/bulma.css"
 [[params.plugins.css]]
 link = "plugins/css/custom.css"
 [[params.plugins.css]]
 link = "plugins/css/fontello.css"
-
-
-# JS Plugins
 [[params.plugins.js]]
 link = "plugins/js/main.js"
-
-#################### default parameters ################################
-[params]
-logo = "images/logo.png"
-logo_width = "200px"
-# Meta data
-description = "This is meta description"
-author = "Themefisher"
-# contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
