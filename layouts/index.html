@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+{{ if site.Data.homepage.hero.enable }}
+
+  {{ with site.Data.homepage.hero }}
+    <section class="hero is-primary is-medium" style="background-image:url({{ .image}});">
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            {{ .title | markdownify }}
+          </h1>
+          <h2 class="subtitle">
+            {{ .subtitle | markdownify }}
+          </h2>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+
+  {{ if site.Data.homepage.feature.enable }}
+    {{ with site.Data.homepage.feature }}
+      <section data-category="features" class="section">
+        <div class="container">
+
+          <div class="columns is-centered is-vcentered is-multiline">
+            <div class="column is-6-desktop is-12-tablet">
+              <div class="p-0 is-relative">
+                <img loading="lazy" class="is-relative is-radius is-fullwidth is-object-cover" src="{{ .image }}" alt="">
+              </div>
+            </div>
+
+            <div class="column is-6-desktop is-12-tablet pl-6">
+              <div class="mb-6">
+                <span class="tag is-info is-rounded">Test features</span>
+                <h2 class="mt-4 title is-size-3">{{ .title | markdownify }}</h2>
+              </div>
+
+              {{ range .feature_item }}
+                <div class="is-flex mb-6">
+                  <div class="mr-6 has-text-primary">
+                    <span class="icon has-text-grey-light">
+                      <i style="" class="{{ .icon }} is-size-1 mt-4"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <h3 class="title is-size-5 is-spaced mb-3">{{ .name | title }}</h3>
+                    <p class="subtitle">{{ .content | title }}</p>
+                  </div>
+                </div>
+              {{ end }}
+
+            </div>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+
+{{ end }}

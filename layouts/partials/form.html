@@ -1,0 +1,61 @@
+<form id="contactForm">
+  <label>Name</label>
+  <input type="text" placeholder="Name" name="name" required><br>
+  <label>Email Address</label>
+  <input type="email" placeholder="Email Address" name="email" required><br>
+  <label>Message</label>
+  <textarea rows="5" placeholder="Message" name="content" required></textarea><br>
+  <input type="file" id="fileUpload" name="filefile">
+  <div id="toast"></div><br>
+  <button type="submit" id="submit">Send</button><br>
+</form>
+<script type="text/javascript">
+  const form = document.getElementById('contactForm')
+  const url = 'https://rxo1ulhuka.execute-api.eu-central-1.amazonaws.com/mailtest/contactme'
+  const toast = document.getElementById('toast')
+  const submit = document.getElementById('submit')
+
+  function post(url, body, callback) {
+    var req = new XMLHttpRequest();
+    req.open("POST", url, true);
+    req.setRequestHeader("Content-Type", "application/json");
+    req.addEventListener("load", function () {
+      if (req.status < 400) {
+        callback(null, JSON.parse(req.responseText));
+      } else {
+        callback(new Error("Request failed: " + req.statusText));
+      }
+    });
+    req.send(JSON.stringify(body));
+  }
+  function success () {
+    toast.innerHTML = 'Thanks for sending me a message! I\'ll get in touch with you ASAP. :)'
+    submit.disabled = false
+    submit.blur()
+    form.name.focus()
+    form.name.value = ''
+    form.email.value = ''
+    form.content.value = ''
+  }
+  function error (err) {
+    toast.innerHTML = 'There was an error with sending your message, hold up until I fix it. Thanks for waiting.'
+    submit.disabled = false
+    console.log(err)
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault()
+    toast.innerHTML = 'Sending'
+    submit.disabled = true
+
+    const payload = {
+      name: form.name.value,
+      email: form.email.value,
+      content: form.content.value
+    }
+    post(url, payload, function (err, res) {
+      if (err) { return error(err) }
+      success()
+    })
+  })
+</script>

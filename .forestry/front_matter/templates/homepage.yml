@@ -1,0 +1,48 @@
+---
+label: Homepage
+hide_body: true
+fields:
+- type: field_group
+  name: hero
+  label: hero
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: image
+- type: field_group
+  name: feature
+  label: feature
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: title
+    label: title
+  - type: file
+    name: image
+    label: image
+  - type: field_group_list
+    name: feature_item
+    label: feature_item
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: icon
+      label: icon
+    - type: text
+      name: content
+      label: content

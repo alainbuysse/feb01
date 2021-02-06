@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+body {font-family: 'Montserrat', sans-serif !important;}
+@media(max-width: 1023px) {
+    .reverse-columns {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+}
+.hero {
+  background-position-y: 0px ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
