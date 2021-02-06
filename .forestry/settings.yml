@@ -9,6 +9,8 @@ sections:
 - type: document
   path: config.toml
   label: Configuration
+- type: heading
+  label: test
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
