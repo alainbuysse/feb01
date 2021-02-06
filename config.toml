@@ -5,10 +5,6 @@ languageName = "En"
 paginate = "3"
 summaryLength = "15"
 title = "New onepage site"
-[hero]
-background_color = "#97D0B4"
-subtitle = "rqsdfqsdfqsf"
-title = "azerazer"
 [markup.goldmark.renderer]
 unsafe = true
 [params]
