@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: data
+  label: hmp
+  match: "**/*"
+- type: document
   path: config.toml
   label: Configuration
 upload_dir: static/uploads
