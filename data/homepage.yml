@@ -3,8 +3,8 @@ hero:
   enable: true
   title: Title
   subtitle: subtitle
-  image: "/images/004.png"
-  background_color: "#C83030"
+  image: ''
+  background_color: "#30C880"
 feature:
   enable: true
   title: Key Features
