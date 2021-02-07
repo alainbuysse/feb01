@@ -3,7 +3,17 @@
 {{ if site.Data.homepage.hero.enable }}
 
   {{ with site.Data.homepage.hero }}
-    <section class="hero is-primary is-medium" style="background-image:url({{ .image}});">
+  {{ if .image }}
+    <style>
+      .hero { background-image: url("{{.image}}") ;}
+    </style>
+    {{ end }}
+    {{ if .background_color }}
+    <style>
+      .hero { background-color: {{.background_color }}!important;}
+    </style>
+    {{ end }}
+    <section class="hero is-primary is-medium" >
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
         <div class="container has-text-centered">
