@@ -3,7 +3,7 @@ hero:
   enable: true
   title: Apotheek Bellens
   subtitle: Wij zijn er voor jou !
-  image: ''
+  image: "/images/features.png"
   background_color: "#30C880"
 feature:
   enable: true
