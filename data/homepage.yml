@@ -3,7 +3,7 @@ hero:
   enable: true
   title: Title
   subtitle: subtitle
-  image: ''
+  image: "/images/004.png"
   background_color: "#C83030"
 feature:
   enable: true
