@@ -8,7 +8,7 @@ hero:
 feature:
   enable: true
   title: Onze diensten
-  image: "/images/meds.jpg"
+  image: "/images/pharm.jfif"
   feature_item:
   - name: Magistrale bereidingen
     icon: icon-duckduckgo
