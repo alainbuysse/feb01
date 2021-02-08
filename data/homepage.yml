@@ -7,10 +7,10 @@ hero:
   background_color: "#30C880"
 feature:
   enable: true
-  title: Key Features
+  title: Onze diensten
   image: images/features.png
   feature_item:
-  - name: Easy to customize
+  - name: Magistrale bereidingen
     icon: icon-duckduckgo
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Object Oriented
