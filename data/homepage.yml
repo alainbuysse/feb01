@@ -1,14 +1,14 @@
 ---
 hero:
   enable: true
-  title: Apotheek Bellens
+  title: Pure Pharmacy
   subtitle: Wij zijn er voor jou !
   image: ''
   background_color: "#30C880"
 feature:
   enable: true
   title: Onze diensten
-  image: "/images/pharm.jfif"
+  image: "/images/prefm.jpg"
   feature_item:
   - name: Magistrale bereidingen
     icon: icon-duckduckgo
