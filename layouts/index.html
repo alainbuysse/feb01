@@ -68,6 +68,7 @@
   {{ end }}
 <div class="container">
     <h2 class="title is-2 is-capitalized">Contact Us</h2>
+	<div id="toast"></div><br>
     <form id="contactForm">
         <div class="field">
             <label for="name" class="label is-size-4 has-text-weight-light"></label>
@@ -91,7 +92,7 @@
             <label for="message" class="label is-size-4 has-text-weight-light"></label>
             <textarea name="content" id="message" rows="5" class="textarea is-medium" placeholder="Message"></textarea>
         </div>
-		<div id="toast"></div><br>
+		
         <button type="submit" class="button is-success is-size-5"  id="submit">Submit</button>
     </form>
 </div>
@@ -115,7 +116,7 @@
     req.send(JSON.stringify(body));
   }
   function success () {
-    toast.innerHTML = 'Thanks for sending me a message! I\'ll get in touch with you ASAP. :)'
+    toast.innerHTML = 'Bedankt voor je bericht! We contacteren je zo snel mogelijk. :)'
     submit.disabled = false
     submit.blur()
     form.name.focus()
