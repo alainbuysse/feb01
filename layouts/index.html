@@ -66,17 +66,35 @@
       </section>
     {{ end }}
   {{ end }}
-<form id="contactForm">
-  <label>Name</label>
-  <input type="text" placeholder="Name" name="name" required><br>
-  <label>Email Address</label>
-  <input type="email" placeholder="Email Address" name="email" required><br>
-  <label>Message</label>
-  <textarea rows="5" placeholder="Message" name="content" required></textarea><br>
-  <input type="file" id="fileUpload" name="filefile">
-  <div id="toast"></div><br>
-  <button type="submit" id="submit">Send</button><br>
-</form>
+<div class="container">
+    <h2 class="title is-2 is-capitalized">Contact Us</h2>
+    <form id="contactForm">
+        <div class="field">
+            <label for="name" class="label is-size-4 has-text-weight-light"></label>
+            <div class="control has-icons-left">
+                <input type="text" name="name" id="name" class="input" placeholder="Name" autofocus>
+                    <span class="icon is-left">
+                        <i class="fa fa-user"></i>
+                    </span>
+            </div>
+        </div>
+        <div class="field">
+            <label for="email" class="label is-size-4 has-text-weight-light"></label>
+            <div class="control has-icons-left">
+                <input type="email" name="email" id="email" class="input" placeholder="Email">
+                    <span class="icon is-left">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+            </div>
+        </div>
+        <div class="field">
+            <label for="message" class="label is-size-4 has-text-weight-light"></label>
+            <textarea name="content" id="message" rows="5" class="textarea is-medium" placeholder="Message"></textarea>
+        </div>
+		<div id="toast"></div><br>
+        <button type="submit" class="button is-success is-size-5"  id="submit">Submit</button>
+    </form>
+</div>
 <script type="text/javascript">
   const form = document.getElementById('contactForm')
   const url = 'https://rxo1ulhuka.execute-api.eu-central-1.amazonaws.com/mailtest/contactme'
