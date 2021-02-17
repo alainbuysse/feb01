@@ -128,6 +128,7 @@
     req.send(JSON.stringify(body));
   }
   function success () {
+    document.getElementById('toast').className = "notification is-info"
     toast.innerHTML = 'Bedankt voor je bericht! We contacteren je zo snel mogelijk. :)'
     submit.disabled = false
     submit.blur()
