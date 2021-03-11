@@ -7,7 +7,7 @@ command = "hugo --gc"
 HUGO_VERSION = "0.74.3"
 HUGO_BASEURL = "/"
 
-# Config for the Netlify Build Plugin: netlify-plugin-minify-html
+# Config for the Netlify Build Plugin: netlify-plugin-minify-html 
 [[plugins]]
   package = "netlify-plugin-minify-html"
 
