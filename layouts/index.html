@@ -120,6 +120,7 @@
     req.open("POST", url, true);
     req.setRequestHeader("Content-Type", "application/json");
     req.setRequestHeader("Access-Control-Allow-Origin", "https://youthful-nobel-677b8f.netlify.app");
+    req.setRequestHeader("Access-Control-Request-Headers", "https://youthful-nobel-677b8f.netlify.app");  
     req.addEventListener("load", function () {
       if (req.status < 400) {
         callback(null, JSON.parse(req.responseText));
