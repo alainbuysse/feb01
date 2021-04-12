@@ -173,4 +173,14 @@
   })
 </script>
 
+<ul>
+  	{{ $data := getJSON "http://75.119.148.94:8056/items/bic" }}
+  	{{ range $data.data }}
+  		{{ if .status }}
+  		<li>{{ .status }}</li>
+      <li><img src="http://75.119.148.94:8056/assets/{{.image}}"></li>
+  		{{ end }}
+  	{{ end }}
+  	</ul>
+
 {{ end }}
