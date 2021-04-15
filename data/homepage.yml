@@ -10,12 +10,12 @@ feature:
   title: Onze diensten
   image: "/images/prefm.jpg"
   feature_item:
-  - name: Wij zijn er voor jou
-    icon: icon-evernote
+  - name: Ook open op zondag
+    icon: icon-plancast
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Magistrale bereidingen
     icon: icon-duckduckgo
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Ook open op zondag
-    icon: icon-plancast
+  - name: Wij zijn er voor jou
+    icon: icon-evernote
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
