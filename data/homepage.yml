@@ -10,9 +10,6 @@ feature:
   title: Onze diensten
   image: "/images/prefm.jpg"
   feature_item:
-  - name: blablabla
-    icon: fedfz
-    content: ezefzef
   - name: Ook open op zondag
     icon: icon-plancast
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
