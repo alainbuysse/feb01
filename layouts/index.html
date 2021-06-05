@@ -176,7 +176,7 @@
   const test = document.querySelector('div.is-flex:nth-child(2) > div:nth-child(2) > p:nth-child(2)')
 
   const getCity = async () => {
-    const base = 'https://cms.bimp.be/items/pages/1?fields=*.*';
+    const base = 'https://cms.bimp.be/items/pages/1';
     const response = await fetch(base);
     const data = await response.json();
     return data;
