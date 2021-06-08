@@ -1,0 +1,9 @@
+{
+  "name": "directustest",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "fs-extra": "^9.1.0"
+  }
+  
+}
