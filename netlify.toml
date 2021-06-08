@@ -9,3 +9,6 @@ HUGO_BASEURL = "/"
 
 [[plugins]]
 package = "/plugins/directustest"
+
+[[plugins]]
+ package = "@netlify/plugin-local-install-core"
