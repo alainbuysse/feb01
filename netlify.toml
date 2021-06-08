@@ -7,3 +7,5 @@ command = "hugo --gc --minify"
 HUGO_VERSION = "0.74.3"
 HUGO_BASEURL = "/"
 
+[[plugins]]
+package = "/plugins/directustest"
