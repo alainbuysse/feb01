@@ -8,7 +8,7 @@ hero:
 feature:
   enable: true
   title: Onze diensten
-  image: "/images/prefm.jpg"
+  image: "https://cms.bimp.be/assets/975501d7-a391-4718-aec6-a340358f4a5b"
   feature_item:
   - name: Ook open op zondag
     icon: icon-plancast
