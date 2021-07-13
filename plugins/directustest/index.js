@@ -26,7 +26,7 @@ module.exports = {
     }).then((data => {
         console.log(data);
         
-                for (let value of Object.values(data)) {
+                for (let value of Object.values(data.data)) {
           filename = value.title + value.id;
           console.log(filename);
           console.log(value.title)
