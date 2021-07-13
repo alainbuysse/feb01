@@ -36,15 +36,6 @@ module.exports = {
                     });
                     
         };
-                
-                
-        
-      
-      fs.writeFile("./content/text.csv", "dummy text", function (err) {
-          if (err) return console.log(err);
-            console.log('file written');
-          });
-      
     }))
             
         } 
