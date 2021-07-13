@@ -5,12 +5,12 @@ module.exports = {
         const fetch = require("node-fetch");
        
         
-        fs.readdir("./content/blog/", (err, files) => {
+        fs.readdir("./content/", (err, files) => {
           if (err) console.log(err);
           else {
             files.forEach((file) => {
               console.log(`DeletingConsoleOnly: ${file}`);
-              fs.unlink(`content/blog//${file}`, (err) => { if (err) throw err; }); //wilt ook extra dir /blog/ verwijderen
+              fs.unlink(`content//${file}`, (err) => { if (err) throw err; }); //wilt ook extra dir /blog/ verwijderen
             });
           }
     });
