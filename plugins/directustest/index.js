@@ -10,7 +10,7 @@ module.exports = {
           else {
             files.forEach((file) => {
               console.log(`DeletingConsoleOnly: ${file}`);
-              //fs.unlink(`content//${file}`, (err) => { if (err) throw err; }); wilt ook extra dir /blog/ verwijderen
+              fs.unlink(`content//${file}`, (err) => { if (err) throw err; }); //wilt ook extra dir /blog/ verwijderen
             });
           }
     });
