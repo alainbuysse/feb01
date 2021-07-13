@@ -25,8 +25,14 @@ module.exports = {
         return response.json(); 
     }).then((data => {
         console.log(data);
-        filename = "/.content/"+data[0].title;
-        console.log(filename);
+        
+                for (let value of Object.values(data)) {
+          filename = value.title + value.id;
+          console.log(filename);
+          console.log(value.title)
+        };
+                
+                
         fs.writeFile("./content/blabla.md", "dummy text", function (err) {
           if (err) return console.log(err);
             console.log('file written');
