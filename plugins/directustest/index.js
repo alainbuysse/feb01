@@ -25,7 +25,7 @@ module.exports = {
         //console.log(data);
         
                 for (let value of Object.values(data.data)) {
-                    filename = "./content/"+ value.title + "-"+ value.id + ".md";
+                    filename = "./content/blog/"+ value.title + "-"+ value.id + ".md";
                     filename = filename.replace(/\s+/g, '');
                     //console.log(filename);
                        //console.log(value.title)
