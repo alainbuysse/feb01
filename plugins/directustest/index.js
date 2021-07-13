@@ -9,7 +9,7 @@ module.exports = {
           if (err) console.log(err);
           else {
             files.forEach((file) => {
-              console.log(`Deleting: ${file}`);
+              console.log(`DeletingConsoleOnly: ${file}`);
               //fs.unlink(`content//${file}`, (err) => { if (err) throw err; }); wilt ook extra dir /blog/ verwijderen
             });
           }
@@ -22,18 +22,18 @@ module.exports = {
         console.log('response: ',response);
         return response.json(); 
     }).then((data => {
-        console.log(data);
+        //console.log(data);
         
                 for (let value of Object.values(data.data)) {
-          filename = "./content/"+ value.title + "-"+ value.id + ".md";
+                    filename = "./content/"+ value.title + "-"+ value.id + ".md";
                     filename = filename.replace(/\s+/g, '');
-          console.log(filename);
-          //console.log(value.title)
+                    //console.log(filename);
+                       //console.log(value.title)
                     
-          fs.writeFile(filename, "dummy text", function (err) {
-          if (err) return console.log(err);
-            console.log('file written');
-          });
+                    fs.writeFile(filename, "dummy text", function (err) {
+                        if (err) return console.log(err);
+                        console.log('file written');
+                    });
                     
         };
                 
