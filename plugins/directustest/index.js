@@ -27,16 +27,19 @@ module.exports = {
         console.log(data);
         
                 for (let value of Object.values(data.data)) {
-          filename = value.title + value.id;
+          filename = "./content/"+ value.title + "-"+ value.id;
           console.log(filename);
-          console.log(value.title)
-        };
-                
-                
-        fs.writeFile("./content/blabla.md", "dummy text", function (err) {
+          //console.log(value.title)
+                    
+          fs.writeFile(filename.replace(/\s+/g, ''), "dummy text", function (err) {
           if (err) return console.log(err);
             console.log('file written');
           });
+                    
+        };
+                
+                
+        
       
       fs.writeFile("./content/text.csv", "dummy text", function (err) {
           if (err) return console.log(err);
