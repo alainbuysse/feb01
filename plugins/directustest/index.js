@@ -25,12 +25,12 @@ module.exports = {
         return response.json(); 
     }).then((data => {
         console.log(data);
-        fs.writeFile("./content/blog/blabla.md", "dummy text", function (err) {
+        fs.writeFile("./content/blabla.md", "dummy text", function (err) {
           if (err) return console.log(err);
             console.log('file written');
           });
       
-      fs.writeFile("./content/blog/text.csv", "dummy text", function (err) {
+      fs.writeFile("./content/text.csv", "dummy text", function (err) {
           if (err) return console.log(err);
             console.log('file written');
           });
