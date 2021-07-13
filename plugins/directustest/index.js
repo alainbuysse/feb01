@@ -25,8 +25,24 @@ module.exports = {
     
         //import modules and define some terms
         try {
-        //get sanity data
-        //then output as md files in our content folder
+      
+    await fetch('https://cms.bimp.be/items/blog').then(response =>{
+        console.log('response: ',response);
+        return response.json(); 
+    }).then((data => {
+        console.log(data);
+        fs.writeFile("./content/blog/blabla.md", "dummy text", function (err) {
+          if (err) return console.log(err);
+            console.log('file written');
+          });
+      
+      fs.writeFile("./content/blog/text.csv", "dummy text", function (err) {
+          if (err) return console.log(err);
+            console.log('file written');
+          });
+      
+    }))
+  
         } catch (error) {
             utils.build.failBuild('Failure message', { error })
           }
