@@ -2,6 +2,7 @@ module.exports = {
     onPreBuild: async ({ utils, packageJson }) => {
         console.log("my plugin loaded!")
         const fs = require("fs-extra");
+        const fetch = require('node-fetch');
        
         
         fs.readdir("./content", (err, files) => {
