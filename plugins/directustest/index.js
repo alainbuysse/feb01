@@ -27,12 +27,12 @@ module.exports = {
                 for (let value of Object.values(data.data)) {
                     filename = "./content/blog/"+ value.title + "-"+ value.id + ".md";
                     filename = filename.replace(/\s+/g, '');
-                    //console.log(filename);
+                    console.log(filename);
                        //console.log(value.title)
                     
                     fs.writeFile(filename, "title: 'dummy text'", function (err) {
                         if (err) return console.log(err);
-                        console.log('file written');
+                        console.log(filename, 'file written');
                     });
                     
         };
