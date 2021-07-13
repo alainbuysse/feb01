@@ -30,7 +30,7 @@ module.exports = {
                     //console.log(filename);
                        //console.log(value.title)
                     
-                    fs.writeFile(filename, "dummy text", function (err) {
+                    fs.writeFile(filename, "title: 'dummy text'", function (err) {
                         if (err) return console.log(err);
                         console.log('file written');
                     });
