@@ -22,7 +22,7 @@ module.exports = {
                     console.log(filename);
                        //console.log(value.title)
                     
-                    fs.writeFile(filename, 'title: title', function (err) {
+                    fs.writeFile(filename, "title", function (err) {
                         if (err) return console.log(err);
                         console.log(filename, 'file written');
                     });
