@@ -7,8 +7,8 @@ command = "hugo --gc --minify"
 HUGO_VERSION = "0.74.3"
 HUGO_BASEURL = "/"
 
-[[plugins]]
+[[pluginsss]]
 package = "/plugins/directustest"
 
-[[plugins]]
+[[pluginsss]]
  package = "@netlify/plugin-local-install-core"
